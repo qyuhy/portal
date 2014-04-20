@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PO_CONFIG>
+	<DB_CONNECTIONS>
+		<DB_CONNECTION TYPE="mysql" VALID="TRUE">
+			<PROPERTY NAME="DB_DRIVER">com.mysql.jdbc.Driver</PROPERTY>
+			<PROPERTY NAME="DB_URL">jdbc:mysql://localhost:3306/portal</PROPERTY>
+			<PROPERTY NAME="DB_USER">root</PROPERTY>
+			<PROPERTY NAME="DB_PASSWORD">yuhy</PROPERTY>
+		</DB_CONNECTION>
+		<DB_CONNECTION TYPE="ORACLE" VALID="FALSE">
+			<PROPERTY NAME="DB_DRIVER">com.microsoft.sqlserver.jdbc.SQLServerDriver</PROPERTY>
+			<PROPERTY NAME="DB_URL">jdbc:sqlserver://192.168.3.14:1433;instanceName=MYDB;databaseName=IF3</PROPERTY>
+			<PROPERTY NAME="DB_USER">sa</PROPERTY>
+			<PROPERTY NAME="DB_PASSWORD">123456</PROPERTY>
+		</DB_CONNECTION>
+		<DB_CONNECTION TYPE="DB2" VALID="FALSE">
+			<PROPERTY NAME="DB_DRIVER">com.ibm.db2.jcc.DB2Driver</PROPERTY>
+			<PROPERTY NAME="DB_URL">jdbc:db2://192.168.3.15:50000/IF3DB2</PROPERTY>
+			<PROPERTY NAME="DB_USER">administrator</PROPERTY>
+			<PROPERTY NAME="DB_PASSWORD">123456</PROPERTY>
+		</DB_CONNECTION>
+	</DB_CONNECTIONS>
+	<PO_PATH PATH="E:/root_wokespace/web/frame/portal/src/main/java"/>
+	<PACKAGE NAME="com.portal.po" IS_GENERATOR="TRUE">
+		<TABLE NAME="T_USER"/>
+		<TABLE NAME="t_resource"/>
+		<TABLE NAME="t_role"/>
+		<TABLE NAME="t_role_res"/>
+		<TABLE NAME="t_user_role"/>
+	</PACKAGE>
+</PO_CONFIG>

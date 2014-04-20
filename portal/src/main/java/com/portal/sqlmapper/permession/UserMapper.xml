@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.portal.po.TUserPo">
+
+	<select id="countAll" resultType="int">
+		select count(*) c from user;
+	</select>
+
+	<select id="selectAll" resultType="TUserPo">
+		select * from t_user
+    </select>
+    
+    <select id="page" parameterType="PagerPo">
+		select * from t_user where u_name = #{params.uName}
+    </select>
+
+	<select id="findByUserName" parameterType="String" resultType="TUserPo">
+		select * from user where userName=#{userName}
+    </select>
+</mapper>
