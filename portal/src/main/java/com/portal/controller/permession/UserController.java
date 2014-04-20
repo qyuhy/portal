@@ -1,19 +1,6 @@
 package com.portal.controller.permession;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.UUID;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.portal.po.PagerPo;
-import com.portal.po.TUserPo;
-import com.portal.service.permession.UserService;
 
 @Controller
 public class UserController{
